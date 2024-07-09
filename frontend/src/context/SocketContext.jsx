@@ -15,7 +15,7 @@ export const SocketContextProvider = ({ children }) => {
 
 	useEffect(() => {
 		if (authUser) {
-			const socket = io("http://localhost:5000", {
+			const socket = io("https://chat-app-1dzg.onrender.com", {
 //the query option is used to send additional data to the server when establishing a connection with the Socket.io server. 
 				query: {
 					userId: authUser._id,
